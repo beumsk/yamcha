@@ -4,6 +4,10 @@
   border-radius: 0 !important;
 }
 
+img {
+  display: block;
+}
+
 .section:nth-of-type(even) {
   background: whitesmoke;
 }

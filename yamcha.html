@@ -758,6 +758,44 @@
 
   <section class="section">
     <div class="container">
+      <h2 class="title is-2 has-text-centered">Carousel video</h2>
+      <div id="carousel-video" class="carousel">
+        <div class="item-1">
+          <figure class="image is-16by9">
+            <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/XJfGnqKoXYY" frameborder="0" allowfullscreen></iframe>
+          </figure>
+        </div>
+        <div class="item-2">
+          <figure class="image is-16by9">
+            <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/XJfGnqKoXYY" frameborder="0" allowfullscreen></iframe>
+          </figure>
+        </div>
+        <div class="item-3">
+          <figure class="image is-16by9">
+            <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/XJfGnqKoXYY" frameborder="0" allowfullscreen></iframe>
+          </figure>
+        </div>
+        <div class="item-4">
+          <figure class="image is-16by9">
+            <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/XJfGnqKoXYY" frameborder="0" allowfullscreen></iframe>
+          </figure>
+        </div>
+        <div class="item-5">
+          <figure class="image is-16by9">
+            <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/XJfGnqKoXYY" frameborder="0" allowfullscreen></iframe>
+          </figure>
+        </div>
+        <div class="item-6">
+          <figure class="image is-16by9">
+            <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/XJfGnqKoXYY" frameborder="0" allowfullscreen></iframe>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
       <h2 class="title is-2 has-text-centered">Carousel cards</h2>
     </div>
   </section>
@@ -811,6 +849,10 @@
   <script>
     // carousel
 		bulmaCarousel.attach('#carousel', {
+			slidesToScroll: 1,
+			slidesToShow: 3
+		});
+    bulmaCarousel.attach('#carousel-video', {
 			slidesToScroll: 1,
 			slidesToShow: 3
 		});

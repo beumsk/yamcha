@@ -95,6 +95,40 @@
 
   <section class="section">
     <div class="container">
+      <h2 class="title is-2 has-text-centered">Breadcrumb</h2>
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Yamcha</a></li>
+          <li><a href="#">Deep</a></li>
+          <li><a href="#">Deeper</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Deepest</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Tabs</h2>
+      <div class="tabs is-fullwidth">
+        <ul>
+          <li class="is-active" onclick="tabs(event)"><a>First</a></li>
+          <li onclick="tabs(event)"><a>Second</a></li>
+          <li onclick="tabs(event)"><a>Third</a></li>
+          <li onclick="tabs(event)"><a>Fourth</a></li>
+        </ul>
+      </div>
+      <div class="tab">
+        <div class="">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et modi nesciunt cum soluta doloribus ad, corrupti quo eius aliquam itaque esse. Maiores odit nobis delectus excepturi cupiditate exercitationem architecto.</div>
+        <div class="is-hidden">2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et modi nesciunt cum soluta doloribus ad, corrupti quo eius aliquam itaque esse. Maiores odit nobis delectus excepturi cupiditate exercitationem architecto.</div>
+        <div class="is-hidden">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et modi nesciunt cum soluta doloribus ad, corrupti quo eius aliquam itaque esse. Maiores odit nobis delectus excepturi cupiditate exercitationem architecto.</div>
+        <div class="is-hidden">4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et modi nesciunt cum soluta doloribus ad, corrupti quo eius aliquam itaque esse. Maiores odit nobis delectus excepturi cupiditate exercitationem architecto.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
       <h2 class="title is-2 has-text-centered">Image</h2>
       <figure class="image is-16by9">
         <img src="https://picsum.photos/800/450?grayscale" alt="Placeholder image">
@@ -649,20 +683,6 @@
 
   <section class="section">
     <div class="container">
-      <h2 class="title is-2 has-text-centered">Breadcrumb</h2>
-      <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-          <li><a href="#">Yamcha</a></li>
-          <li><a href="#">Deep</a></li>
-          <li><a href="#">Deeper</a></li>
-          <li class="is-active"><a href="#" aria-current="page">Deepest</a></li>
-        </ul>
-      </nav>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
       <h2 class="title is-2 has-text-centered">Message</h2>
       <article class="message">
         <div class="message-header">
@@ -814,26 +834,6 @@
 
   <section class="section">
     <div class="container">
-      <h2 class="title is-2 has-text-centered">Tabs</h2>
-      <div class="tabs is-fullwidth">
-        <ul>
-          <li class="is-active" onclick="tabs(event)"><a>First</a></li>
-          <li onclick="tabs(event)"><a>Second</a></li>
-          <li onclick="tabs(event)"><a>Third</a></li>
-          <li onclick="tabs(event)"><a>Fourth</a></li>
-        </ul>
-      </div>
-      <div class="tab">
-        <div class="">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et modi nesciunt cum soluta doloribus ad, corrupti quo eius aliquam itaque esse. Maiores odit nobis delectus excepturi cupiditate exercitationem architecto.</div>
-        <div class="is-hidden">2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et modi nesciunt cum soluta doloribus ad, corrupti quo eius aliquam itaque esse. Maiores odit nobis delectus excepturi cupiditate exercitationem architecto.</div>
-        <div class="is-hidden">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et modi nesciunt cum soluta doloribus ad, corrupti quo eius aliquam itaque esse. Maiores odit nobis delectus excepturi cupiditate exercitationem architecto.</div>
-        <div class="is-hidden">4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et modi nesciunt cum soluta doloribus ad, corrupti quo eius aliquam itaque esse. Maiores odit nobis delectus excepturi cupiditate exercitationem architecto.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
       <h2 class="title is-2 has-text-centered">Extensions</h2>
       <p class="has-text-centered"><a href="https://bulma.io/extensions/">Check the Bulma extensions</a></p>
     </div>
@@ -845,7 +845,7 @@
     </div>
   </footer>
 
-  <script src="umbraco-carousel.js"></script>
+  <script src="bulma-carousel.js"></script>
   <script>
     // carousel
 		bulmaCarousel.attach('#carousel', {

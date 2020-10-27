@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="bulma.css">
   <link rel="stylesheet" href="bulma-carousel.css">
+  <link rel="stylesheet" href="bulma-accordion.css">
   <link rel="stylesheet" href="yamcha.css">
 
   <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
@@ -324,12 +325,6 @@
           </figure>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="title is-2 has-text-centered">Accordion?</h2>
     </div>
   </section>
 
@@ -698,6 +693,56 @@
 
   <section class="section">
     <div class="container">
+      <h2 class="title is-2 has-text-centered">Accordion</h2>
+      <div id="accordion">
+        <article class="message">
+          <div class="message-header">
+            <p>Lorem 1 <a href="#collapsible-message-accordion-1" data-action="collapse">Collapse/Expand</a></p>
+          </div>
+          <div id="collapsible-message-accordion-1" class="message-body is-collapsible is-active" data-parent="accordion">
+            <div class="message-body-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+              placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+              <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+              sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
+              sem eget, facilisis sodales sem.
+            </div>
+          </div>
+        </article>
+        <article class="message">
+          <div class="message-header">
+            <p>Lorem 2 <a href="#collapsible-message-accordion-2" data-action="collapse">Collapse/Expand</a></p>
+          </div>
+          <div id="collapsible-message-accordion-2" class="message-body is-collapsible" data-parent="accordion">
+            <div class="message-body-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+              placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+              <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+              sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
+              sem eget, facilisis sodales sem.
+            </div>
+          </div>
+        </article>
+        <article class="message">
+          <div class="message-header">
+            <p>Lorem 3 <a href="#collapsible-message-accordion-3" data-action="collapse">Collapse/Expand</a></p>
+          </div>
+          <div id="collapsible-message-accordion-3" class="message-body is-collapsible" data-parent="accordion">
+            <div class="message-body-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+              placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+              <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+              sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
+              sem eget, facilisis sodales sem.
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
       <h2 class="title is-2 has-text-centered">Modal</h2>
     </div>
   </section>
@@ -950,7 +995,12 @@
   </footer>
 
   <script src="bulma-carousel.js"></script>
+  <script src="bulma-accordion.js"></script>
   <script>
+    // accordion
+    bulmaCollapsible.attach();
+    // accordion end
+
     // carousel
 		bulmaCarousel.attach('#carousel', {
 			slidesToScroll: 1,

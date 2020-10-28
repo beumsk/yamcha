@@ -12,10 +12,10 @@
   <title>Yamcha</title>
   <meta name="description" content="A wonderful and complete Bulma template">
 
-  <link rel="stylesheet" href="bulma.css">
-  <link rel="stylesheet" href="bulma-carousel.css">
-  <link rel="stylesheet" href="bulma-accordion.css">
-  <link rel="stylesheet" href="yamcha.css">
+  <link rel="stylesheet" href="css/bulma.css">
+  <link rel="stylesheet" href="css/bulma-carousel.css">
+  <link rel="stylesheet" href="css/bulma-accordion.css">
+  <link rel="stylesheet" href="css/yamcha.css">
 
   <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
   <style>
@@ -994,63 +994,9 @@
     </div>
   </footer>
 
-  <script src="bulma-carousel.js"></script>
-  <script src="bulma-accordion.js"></script>
-  <script>
-    // accordion
-    bulmaCollapsible.attach();
-    // accordion end
-
-    // carousel
-		bulmaCarousel.attach('#carousel', {
-			slidesToScroll: 1,
-			slidesToShow: 3
-		});
-    bulmaCarousel.attach('#carousel-video', {
-			slidesToScroll: 1,
-			slidesToShow: 3
-		});
-    bulmaCarousel.attach('#carousel-card', {
-			slidesToScroll: 1,
-			slidesToShow: 3
-		});
-    // carousel end
-
-    // tabs script
-    function tabs(e) {
-      var siblings = e.currentTarget.parentNode.querySelectorAll("li");
-      for (var i=0; i<siblings.length; i++) {
-        siblings[i].classList.remove("is-active");
-      }
-      e.currentTarget.classList.add("is-active");
-      var index = Array.prototype.slice.call(siblings).indexOf(e.currentTarget);
-      var tabs = e.currentTarget.parentNode.parentNode.parentNode.querySelectorAll(".tab div");
-      for (var i=0; i<tabs.length; i++) {
-        tabs[i].classList.add("is-hidden");
-      }
-      tabs[index].classList.remove("is-hidden");
-    }
-    // tabs script end
-
-
-    // burger menu script
-    document.addEventListener('DOMContentLoaded', function() {
-      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-      if ($navbarBurgers.length > 0) {
-        $navbarBurgers.forEach( function(el) {
-          el.addEventListener('click', function() {
-            var target = el.dataset.target;
-            var $target = document.getElementById(target);
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-          });
-        });
-      }
-    });
-    // burger menu script end
-
-    
-  </script>
+  <script src="js/bulma-carousel.js"></script>
+  <script src="js/bulma-accordion.js"></script>
+  <script src="js/yamcha.js"></script>
 </body>
   
 </html>

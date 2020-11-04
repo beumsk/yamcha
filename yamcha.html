@@ -90,6 +90,12 @@
             Create different page layout
           </label>
         </div>
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Improve script to take all component into account (multiple modal on a single page)
+          </label>
+        </div>
       </div>  
     </div>
   </section>
@@ -744,6 +750,25 @@
   <section class="section">
     <div class="container">
       <h2 class="title is-2 has-text-centered">Modal</h2>
+      <p class="has-text-centered">
+        <button class="button is-primary modal-button">Modal button</button>
+      </p>
+      <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Modal title</p>
+            <button class="delete modal-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>Modal body</p>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success">Save changes</button>
+            <button class="button modal-cancel">Cancel</button>
+          </footer>
+        </div>
+      </div>
     </div>
   </section>
 

@@ -3,6 +3,7 @@
   bulmaCollapsible.attach();
   // accordion end
 
+
   // carousel
   bulmaCarousel.attach('#carousel', {
     slidesToScroll: 1,
@@ -17,6 +18,7 @@
     slidesToShow: 3
   });
   // carousel end
+
 
   // tabs script
   function tabs(e) {
@@ -33,6 +35,24 @@
     tabs[index].classList.remove("is-hidden");
   }
   // tabs script end
+
+
+  // modal script
+  var modal = document.querySelector('.modal'); 
+  var modalBtn = document.querySelector('.modal-button');
+  var modalClose = document.querySelector('.modal-close');
+  var modalCancel = document.querySelector('.modal-cancel');
+
+  modalBtn.addEventListener('click', function () { modal.style.display = 'flex' });
+  modalClose.addEventListener('click', function () { modal.style.display = 'none' });
+  modalCancel.addEventListener('click', function () { modal.style.display = 'none' });
+
+  window.addEventListener('click', function (event) { 
+    if (event.target.className === 'modal-background') { 
+      modal.style.display = 'none' 
+    } 
+  });
+  // modal script
 
 
   // burger menu script

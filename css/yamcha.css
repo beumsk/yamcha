@@ -8,6 +8,10 @@ img {
   display: block;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .section:nth-of-type(even) {
   background: whitesmoke;
 }

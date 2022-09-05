@@ -1,0 +1,1088 @@
+<!-- Bulma - CSS Framework - by Beumsk -->
+
+<!-- support -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yamcha</title>
+  <meta name="description" content="A wonderful and complete Bulma template">
+
+  <link rel="stylesheet" href="css/bulma.css">
+  <link rel="stylesheet" href="css/bulma-carousel.css">
+  <link rel="stylesheet" href="css/bulma-accordion.css">
+  <link rel="stylesheet" href="css/bulma-timeline.css">
+  <link rel="stylesheet" href="css/yamcha.css">
+
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
+  <style>
+  </style>
+
+  <!-- <meta http-equiv="refresh" content="1"> -->
+
+</head>
+
+<body class="has-navbar-fixed-top">
+  <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation" style="background: rgba(256,256,256,0.9);">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#"><strong>Yamcha</strong></a>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+  
+      <!-- <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#menus">Menus</a>
+          <a class="navbar-item" href="#hours">Opening hours</a>
+          <a class="navbar-item" href="#contact">Contact</a>
+        </div>
+      </div> -->
+    </div>
+  </nav>
+
+  <section class="section back back-sm back-light" style="background-image: url(https://picsum.photos/id/1015/1200/800);">
+    <div class="container has-children-centered">
+      <div class="has-text-centered">
+        <h1 class="title is-1 has-text-white has-text-contrast">Yamcha</h1>
+        <p class="subtitle has-text-white has-text-contrast">A wonderful Bulma template</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">TO DO</h2>
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Change colors
+          </label>
+        </div>
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Complete sections
+          </label>
+        </div>
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Add icons
+          </label>
+        </div>
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Create subpages for each section
+          </label>
+        </div>
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Create different page layout
+          </label>
+        </div>
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Check uskinned
+          </label>
+        </div>
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Improve script to take all component into account (multiple modal on a single page)
+          </label>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Breadcrumb</h2>
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Yamcha</a></li>
+          <li><a href="#">Deep</a></li>
+          <li><a href="#">Deeper</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Deepest</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Tabs</h2>
+      <div class="tabs is-fullwidth">
+        <ul>
+          <li class="is-active" onclick="tabs(event)"><a>First</a></li>
+          <li onclick="tabs(event)"><a>Second</a></li>
+          <li onclick="tabs(event)"><a>Third</a></li>
+          <li onclick="tabs(event)"><a>Fourth</a></li>
+        </ul>
+      </div>
+      <div class="tab">
+        <div class="">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et modi nesciunt cum soluta doloribus ad, corrupti quo eius aliquam itaque esse. Maiores odit nobis delectus excepturi cupiditate exercitationem architecto.</div>
+        <div class="is-hidden">2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et modi nesciunt cum soluta doloribus ad, corrupti quo eius aliquam itaque esse. Maiores odit nobis delectus excepturi cupiditate exercitationem architecto.</div>
+        <div class="is-hidden">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et modi nesciunt cum soluta doloribus ad, corrupti quo eius aliquam itaque esse. Maiores odit nobis delectus excepturi cupiditate exercitationem architecto.</div>
+        <div class="is-hidden">4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et modi nesciunt cum soluta doloribus ad, corrupti quo eius aliquam itaque esse. Maiores odit nobis delectus excepturi cupiditate exercitationem architecto.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Image</h2>
+      <figure class="image is-16by9">
+        <img src="./media/bridge-man.jpg" alt="Placeholder image">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Video</h2>
+      <figure class="image is-16by9">
+        <!-- <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/2-w1vZX_K_c" frameborder="0" allowfullscreen></iframe> -->
+        <video controls class="has-ratio" width="640" height="360" src="./media/html.mp4"></video>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Tiles</h2>
+      <div class="tile is-ancestor tile-wrap">
+        <div class="tile is-parent is-4">
+          <div class="tile is-child box">
+            <p class="title is-size-4">Lorem</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae maiores doloremque autem excepturi dignissimos! Molestias animi eligendi fuga iste ipsum!</p>
+          </div>
+        </div>
+        <div class="tile is-parent is-4">
+          <div class="tile is-child box">
+            <p class="title is-size-4">Lorem</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque dolorum repellendus adipisci neque dolorem praesentium est architecto rerum asperiores quisquam.</p>
+          </div>
+        </div>
+        <div class="tile is-parent is-4">
+          <div class="tile is-child box">
+            <p class="title is-size-4">Lorem</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto libero ratione delectus similique eligendi vitae rerum excepturi harum accusamus voluptatum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Cards</h2>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="./media/bridge-man.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="./media/wood.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">John Smith</p>
+                  <p class="subtitle is-6">@johnsmith</p>
+                </div>
+              </div>
+          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <br>
+                <time datetime="2020-1-1">11:09 PM - 1 Jan 2020</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="./media/bridge-man.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="./media/wood.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">John Smith</p>
+                  <p class="subtitle is-6">@johnsmith</p>
+                </div>
+              </div>
+          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <br>
+                <time datetime="2020-1-1">11:09 PM - 1 Jan 2020</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="./media/bridge-man.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="./media/wood.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">John Smith</p>
+                  <p class="subtitle is-6">@johnsmith</p>
+                </div>
+              </div>
+          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <br>
+                <time datetime="2020-1-1">11:09 PM - 1 Jan 2020</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Map</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80598.70600236577!2d4.305179023759514!3d50.855062357675315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3a4ed73c76867%3A0xc18b3a66787302a7!2sBruxelles!5e0!3m2!1sfr!2sbe!4v1601994259905!5m2!1sfr!2sbe" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </section>
+
+  <!-- <section class="hero">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80598.70600236577!2d4.305179023759514!3d50.855062357675315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3a4ed73c76867%3A0xc18b3a66787302a7!2sBruxelles!5e0!3m2!1sfr!2sbe!4v1601994259905!5m2!1sfr!2sbe" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </section> -->
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Gallery</h2>
+      <div class="columns">
+        <div class="column">
+          <figure class="image is-1by1">
+            <img src="./media/camera.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image is-1by1">
+            <img src="./media/camera.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image is-1by1">
+            <img src="./media/camera.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image is-1by1">
+            <img src="./media/camera.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <figure class="image is-1by1">
+            <img src="./media/camera.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image is-1by1">
+            <img src="./media/camera.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image is-1by1">
+            <img src="./media/camera.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image is-1by1">
+            <img src="./media/camera.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Book</h2>
+      <div class="columns">
+        <div class="column">
+          <div class="has-children-centered">
+            <p class="title is-size-3">Lorem</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus maxime atque sapiente dignissimos sunt in dolore officiis, quo, distinctio architecto totam. Unde vel nulla, quos doloribus, aut dolor aliquid debitis consequatur necessitatibus quia ducimus iusto corporis sint, labore eos cumque quam. Aperiam necessitatibus soluta repellat nam. Accusantium necessitatibus distinctio minus, aliquid iure ex nostrum, ducimus quisquam voluptate cumque voluptatem deleniti temporibus. Eaque inventore temporibus eligendi repudiandae quisquam, repellat quis distinctio quaerat adipisci nisi placeat ipsa corporis ipsam incidunt illum rerum debitis? Ab vero pariatur autem rem quae dolor ea perferendis praesentium aliquam illum! Similique voluptatem, ipsam soluta deleniti in officiis!</p>
+          </div>
+        </div>
+        <div class="column">
+          <figure class="image is-16by9">
+            <img src="./media/flower.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+      </div>      
+      <div class="columns">
+        <div class="column">
+          <figure class="image is-16by9">
+            <img src="./media/flower.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="column">
+          <div class="has-children-centered">
+            <p class="title is-size-3">Lorem</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus maxime atque sapiente dignissimos sunt in dolore officiis, quo, distinctio architecto totam. Unde vel nulla, quos doloribus, aut dolor aliquid debitis consequatur necessitatibus quia ducimus iusto corporis sint, labore eos cumque quam. Aperiam necessitatibus soluta repellat nam. Accusantium necessitatibus distinctio minus, aliquid iure ex nostrum, ducimus quisquam voluptate cumque voluptatem deleniti temporibus. Eaque inventore temporibus eligendi repudiandae quisquam, repellat quis distinctio quaerat adipisci nisi placeat ipsa corporis ipsam incidunt illum rerum debitis? Ab vero pariatur autem rem quae dolor ea perferendis praesentium aliquam illum! Similique voluptatem, ipsam soluta deleniti in officiis!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Video book</h2>
+      <div class="columns">
+        <div class="column">
+          <figure class="image is-16by9">
+            <video controls class="has-ratio" width="640" height="360" src="./media/html.mp4"></video>
+          </figure>
+        </div>
+        <div class="column">
+          <div class="has-children-centered">
+            <p class="title is-size-3">Lorem</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus maxime atque sapiente dignissimos sunt in dolore officiis, quo, distinctio architecto totam. Unde vel nulla, quos doloribus, aut dolor aliquid debitis consequatur necessitatibus quia ducimus iusto corporis sint, labore eos cumque quam. Aperiam necessitatibus soluta repellat nam. Accusantium necessitatibus distinctio minus, aliquid iure ex nostrum, ducimus quisquam voluptate cumque voluptatem deleniti temporibus. Eaque inventore temporibus eligendi repudiandae quisquam, repellat quis distinctio quaerat adipisci nisi placeat ipsa corporis ipsam incidunt illum rerum debitis? Ab vero pariatur autem rem quae dolor ea perferendis praesentium aliquam illum! Similique voluptatem, ipsam soluta deleniti in officiis!</p>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="has-children-centered">
+            <p class="title is-size-3">Lorem</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus maxime atque sapiente dignissimos sunt in dolore officiis, quo, distinctio architecto totam. Unde vel nulla, quos doloribus, aut dolor aliquid debitis consequatur necessitatibus quia ducimus iusto corporis sint, labore eos cumque quam. Aperiam necessitatibus soluta repellat nam. Accusantium necessitatibus distinctio minus, aliquid iure ex nostrum, ducimus quisquam voluptate cumque voluptatem deleniti temporibus. Eaque inventore temporibus eligendi repudiandae quisquam, repellat quis distinctio quaerat adipisci nisi placeat ipsa corporis ipsam incidunt illum rerum debitis? Ab vero pariatur autem rem quae dolor ea perferendis praesentium aliquam illum! Similique voluptatem, ipsam soluta deleniti in officiis!</p>
+          </div>
+        </div>
+        <div class="column">
+          <figure class="image is-16by9">
+            <video controls class="has-ratio" width="640" height="360" src="./media/html.mp4"></video>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Table</h2>
+      <div class="table-container">
+        <table class="table is-fullwidth is-striped">
+          <thead>
+            <tr>
+              <th><abbr title="Position">Pos</abbr></th>
+              <th>Team</th>
+              <th><abbr title="Played">Pld</abbr></th>
+              <th><abbr title="Won">W</abbr></th>
+              <th><abbr title="Drawn">D</abbr></th>
+              <th><abbr title="Lost">L</abbr></th>
+              <th><abbr title="Goals for">GF</abbr></th>
+              <th><abbr title="Goals against">GA</abbr></th>
+              <th><abbr title="Goal difference">GD</abbr></th>
+              <th><abbr title="Points">Pts</abbr></th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th><abbr title="Position">Pos</abbr></th>
+              <th>Team</th>
+              <th><abbr title="Played">Pld</abbr></th>
+              <th><abbr title="Won">W</abbr></th>
+              <th><abbr title="Drawn">D</abbr></th>
+              <th><abbr title="Lost">L</abbr></th>
+              <th><abbr title="Goals for">GF</abbr></th>
+              <th><abbr title="Goals against">GA</abbr></th>
+              <th><abbr title="Goal difference">GD</abbr></th>
+              <th><abbr title="Points">Pts</abbr></th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
+              </td>
+              <td>38</td>
+              <td>23</td>
+              <td>12</td>
+              <td>3</td>
+              <td>68</td>
+              <td>36</td>
+              <td>+32</td>
+              <td>81</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C.">Arsenal</a></td>
+              <td>38</td>
+              <td>20</td>
+              <td>11</td>
+              <td>7</td>
+              <td>65</td>
+              <td>36</td>
+              <td>+29</td>
+              <td>71</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Tottenham Hotspur F.C.">Tottenham Hotspur</a></td>
+              <td>38</td>
+              <td>19</td>
+              <td>13</td>
+              <td>6</td>
+              <td>69</td>
+              <td>35</td>
+              <td>+34</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Manchester City F.C.">Manchester City</a></td>
+              <td>38</td>
+              <td>19</td>
+              <td>9</td>
+              <td>10</td>
+              <td>71</td>
+              <td>41</td>
+              <td>+30</td>
+              <td>66</td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td><a href="https://en.wikipedia.org/wiki/Manchester_United_F.C." title="Manchester United F.C.">Manchester United</a></td>
+              <td>38</td>
+              <td>19</td>
+              <td>9</td>
+              <td>10</td>
+              <td>49</td>
+              <td>35</td>
+              <td>+14</td>
+              <td>66</td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td><a href="https://en.wikipedia.org/wiki/Southampton_F.C." title="Southampton F.C.">Southampton</a></td>
+              <td>38</td>
+              <td>18</td>
+              <td>9</td>
+              <td>11</td>
+              <td>59</td>
+              <td>41</td>
+              <td>+18</td>
+              <td>63</td>
+            </tr>
+            <tr>
+              <th>7</th>
+              <td><a href="https://en.wikipedia.org/wiki/West_Ham_United_F.C." title="West Ham United F.C.">West Ham United</a></td>
+              <td>38</td>
+              <td>16</td>
+              <td>14</td>
+              <td>8</td>
+              <td>65</td>
+              <td>51</td>
+              <td>+14</td>
+              <td>62</td>
+            </tr>
+            <tr class="is-selected">
+              <th>8</th>
+              <td><a href="https://en.wikipedia.org/wiki/Liverpool_F.C." title="Liverpool F.C.">Liverpool</a></td>
+              <td>38</td>
+              <td>16</td>
+              <td>12</td>
+              <td>10</td>
+              <td>63</td>
+              <td>50</td>
+              <td>+13</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <th>9</th>
+              <td><a href="https://en.wikipedia.org/wiki/Stoke_City_F.C." title="Stoke City F.C.">Stoke City</a></td>
+              <td>38</td>
+              <td>14</td>
+              <td>9</td>
+              <td>15</td>
+              <td>41</td>
+              <td>55</td>
+              <td>−14</td>
+              <td>51</td>
+            </tr>
+            <tr>
+              <th>10</th>
+              <td><a href="https://en.wikipedia.org/wiki/Chelsea_F.C." title="Chelsea F.C.">Chelsea</a></td>
+              <td>38</td>
+              <td>12</td>
+              <td>14</td>
+              <td>12</td>
+              <td>59</td>
+              <td>53</td>
+              <td>+6</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <th>11</th>
+              <td><a href="https://en.wikipedia.org/wiki/Everton_F.C." title="Everton F.C.">Everton</a></td>
+              <td>38</td>
+              <td>11</td>
+              <td>14</td>
+              <td>13</td>
+              <td>59</td>
+              <td>55</td>
+              <td>+4</td>
+              <td>47</td>
+            </tr>
+            <tr>
+              <th>12</th>
+              <td><a href="https://en.wikipedia.org/wiki/Swansea_City_A.F.C." title="Swansea City A.F.C.">Swansea City</a></td>
+              <td>38</td>
+              <td>12</td>
+              <td>11</td>
+              <td>15</td>
+              <td>42</td>
+              <td>52</td>
+              <td>−10</td>
+              <td>47</td>
+            </tr>
+            <tr>
+              <th>13</th>
+              <td><a href="https://en.wikipedia.org/wiki/Watford_F.C." title="Watford F.C.">Watford</a></td>
+              <td>38</td>
+              <td>12</td>
+              <td>9</td>
+              <td>17</td>
+              <td>40</td>
+              <td>50</td>
+              <td>−10</td>
+              <td>45</td>
+            </tr>
+            <tr>
+              <th>14</th>
+              <td><a href="https://en.wikipedia.org/wiki/West_Bromwich_Albion_F.C." title="West Bromwich Albion F.C.">West Bromwich Albion</a></td>
+              <td>38</td>
+              <td>10</td>
+              <td>13</td>
+              <td>15</td>
+              <td>34</td>
+              <td>48</td>
+              <td>−14</td>
+              <td>43</td>
+            </tr>
+            <tr>
+              <th>15</th>
+              <td><a href="https://en.wikipedia.org/wiki/Crystal_Palace_F.C." title="Crystal Palace F.C.">Crystal Palace</a></td>
+              <td>38</td>
+              <td>11</td>
+              <td>9</td>
+              <td>18</td>
+              <td>39</td>
+              <td>51</td>
+              <td>−12</td>
+              <td>42</td>
+            </tr>
+            <tr>
+              <th>16</th>
+              <td><a href="https://en.wikipedia.org/wiki/A.F.C._Bournemouth" title="A.F.C. Bournemouth">AFC Bournemouth</a></td>
+              <td>38</td>
+              <td>11</td>
+              <td>9</td>
+              <td>18</td>
+              <td>45</td>
+              <td>67</td>
+              <td>−22</td>
+              <td>42</td>
+            </tr>
+            <tr>
+              <th>17</th>
+              <td><a href="https://en.wikipedia.org/wiki/Sunderland_A.F.C." title="Sunderland A.F.C.">Sunderland</a></td>
+              <td>38</td>
+              <td>9</td>
+              <td>12</td>
+              <td>17</td>
+              <td>48</td>
+              <td>62</td>
+              <td>−14</td>
+              <td>39</td>
+            </tr>
+            <tr>
+              <th>18</th>
+              <td><a href="https://en.wikipedia.org/wiki/Newcastle_United_F.C." title="Newcastle United F.C.">Newcastle United</a> <strong>(R)</strong>
+              </td>
+              <td>38</td>
+              <td>9</td>
+              <td>10</td>
+              <td>19</td>
+              <td>44</td>
+              <td>65</td>
+              <td>−21</td>
+              <td>37</td>
+            </tr>
+            <tr>
+              <th>19</th>
+              <td><a href="https://en.wikipedia.org/wiki/Norwich_City_F.C." title="Norwich City F.C.">Norwich City</a> <strong>(R)</strong>
+              </td>
+              <td>38</td>
+              <td>9</td>
+              <td>7</td>
+              <td>22</td>
+              <td>39</td>
+              <td>67</td>
+              <td>−28</td>
+              <td>34</td>
+            </tr>
+            <tr>
+              <th>20</th>
+              <td><a href="https://en.wikipedia.org/wiki/Aston_Villa_F.C." title="Aston Villa F.C.">Aston Villa</a> <strong>(R)</strong>
+              </td>
+              <td>38</td>
+              <td>3</td>
+              <td>8</td>
+              <td>27</td>
+              <td>27</td>
+              <td>76</td>
+              <td>−49</td>
+              <td>17</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>      
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Message</h2>
+      <article class="message">
+        <div class="message-header">
+          <p>Lorem</p>
+          <!-- <button class="delete" aria-label="delete"></button> -->
+        </div>
+        <div class="message-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Accordion</h2>
+      <div id="accordion">
+        <article class="message">
+          <div class="message-header">
+            <p>Lorem 1 <a href="#collapsible-message-accordion-1" data-action="collapse">Collapse/Expand</a></p>
+          </div>
+          <div id="collapsible-message-accordion-1" class="message-body is-collapsible is-active" data-parent="accordion">
+            <div class="message-body-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+              placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+              <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+              sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
+              sem eget, facilisis sodales sem.
+            </div>
+          </div>
+        </article>
+        <article class="message">
+          <div class="message-header">
+            <p>Lorem 2 <a href="#collapsible-message-accordion-2" data-action="collapse">Collapse/Expand</a></p>
+          </div>
+          <div id="collapsible-message-accordion-2" class="message-body is-collapsible" data-parent="accordion">
+            <div class="message-body-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+              placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+              <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+              sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
+              sem eget, facilisis sodales sem.
+            </div>
+          </div>
+        </article>
+        <article class="message">
+          <div class="message-header">
+            <p>Lorem 3 <a href="#collapsible-message-accordion-3" data-action="collapse">Collapse/Expand</a></p>
+          </div>
+          <div id="collapsible-message-accordion-3" class="message-body is-collapsible" data-parent="accordion">
+            <div class="message-body-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+              placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+              <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+              sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
+              sem eget, facilisis sodales sem.
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Modal</h2>
+      <p class="has-text-centered">
+        <button class="button is-primary modal-button">Modal button</button>
+      </p>
+      <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Modal title</p>
+            <button class="delete modal-close" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>Modal body</p>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success">Save changes</button>
+            <button class="button modal-cancel">Cancel</button>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Form</h2>
+      <form class="form">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input" required>
+          </div>
+        </div>      
+        <div class="field">
+          <label class="label">Username</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input" value="Yamcha" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Subject</label>
+          <div class="control">
+            <div class="select">
+              <select>
+                <option>Select dropdown</option>
+                <option>With options</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
+        </div>      
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox">
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="question">
+              Yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="question">
+              No
+            </label>
+          </div>
+        </div>
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" type="submit">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-link is-light">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Timeline</h2>
+      <div class="timeline is-centered">
+        <div class="timeline-header">
+          <span class="tag is-medium is-primary">Start</span>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="heading">January 2021</p>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="heading">February 2021</p>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="timeline-header">
+          <span class="tag is-primary">2017</span>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="heading">March 2021</p>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="heading">April 2021</p>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="timeline-header">
+          <span class="tag is-medium is-primary">End</span>
+        </div>
+      </div>
+      <p class="has-text-centered">
+        <a href="https://wikiki.github.io/components/timeline/" target="_blank">More info here</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Carousel</h2>
+      <div id="carousel" class="carousel">
+        <div class="item-1">
+          <img src="./media/bridge-man.jpg" alt="lorem picsum">
+        </div>
+        <div class="item-2">
+          <img src="./media/bridge-man.jpg" alt="lorem picsum">
+        </div>
+        <div class="item-3">
+          <img src="./media/bridge-man.jpg" alt="lorem picsum">
+        </div>
+        <div class="item-4">
+          <img src="./media/bridge-man.jpg" alt="lorem picsum">
+        </div>
+        <div class="item-5">
+          <img src="./media/bridge-man.jpg" alt="lorem picsum">
+        </div>
+        <div class="item-6">
+          <img src="./media/bridge-man.jpg" alt="lorem picsum">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Carousel video</h2>
+      <div id="carousel-video" class="carousel">
+        <div class="item-1">
+          <figure class="image is-16by9">
+            <video controls class="has-ratio" width="640" height="360" src="./media/html.mp4"></video>
+          </figure>
+        </div>
+        <div class="item-2">
+          <figure class="image is-16by9">
+            <video controls class="has-ratio" width="640" height="360" src="./media/html.mp4"></video>
+          </figure>
+        </div>
+        <div class="item-3">
+          <figure class="image is-16by9">
+            <video controls class="has-ratio" width="640" height="360" src="./media/html.mp4"></video>
+          </figure>
+        </div>
+        <div class="item-4">
+          <figure class="image is-16by9">
+            <video controls class="has-ratio" width="640" height="360" src="./media/html.mp4"></video>
+          </figure>
+        </div>
+        <div class="item-5">
+          <figure class="image is-16by9">
+            <video controls class="has-ratio" width="640" height="360" src="./media/html.mp4"></video>
+          </figure>
+        </div>
+        <div class="item-6">
+          <figure class="image is-16by9">
+            <video controls class="has-ratio" width="640" height="360" src="./media/html.mp4"></video>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Carousel cards</h2>
+      <div id="carousel-card" class="carousel">
+        <div class="item-1">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="./media/flower.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <br>
+                <time datetime="2020-1-1">11:09 PM - 1 Jan 2020</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-2">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="./media/flower.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <br>
+                <time datetime="2020-1-1">11:09 PM - 1 Jan 2020</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="./media/flower.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <br>
+                <time datetime="2020-1-1">11:09 PM - 1 Jan 2020</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="./media/flower.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <br>
+                <time datetime="2020-1-1">11:09 PM - 1 Jan 2020</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-5">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="./media/flower.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <br>
+                <time datetime="2020-1-1">11:09 PM - 1 Jan 2020</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-6">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="./media/flower.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <br>
+                <time datetime="2020-1-1">11:09 PM - 1 Jan 2020</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Extensions</h2>
+      <p class="has-text-centered"><a href="https://bulma.io/extensions/">Check the Bulma extensions</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2020 - Yamcha - Rémy Beumier</p>
+    </div>
+  </footer>
+
+  <script src="js/bulma-carousel.js"></script>
+  <script src="js/bulma-accordion.js"></script>
+  <script src="js/yamcha.js"></script>
+</body>
+  
+</html>

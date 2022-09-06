@@ -27,7 +27,7 @@
 </head>
 
 <body class="has-navbar-fixed-top">
-  <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation" style="background: rgba(256,256,256,0.9);">
+  <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation" style="border-bottom: solid 1px rgba(0,0,0,0.2);">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="#"><strong>Yamcha</strong></a>
@@ -48,62 +48,12 @@
     </div>
   </nav>
 
-  <section class="section back back-sm back-light" style="background-image: url(https://picsum.photos/id/1015/1200/800);">
+  <section class="section back back-sm" style="background-image: linear-gradient(-45deg, #00c4a7 50%, #00d1b2 50%);">
     <div class="container has-children-centered">
       <div class="has-text-centered">
         <h1 class="title is-1 has-text-white has-text-contrast">Yamcha</h1>
         <p class="subtitle has-text-white has-text-contrast">A wonderful Bulma template</p>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="title is-2 has-text-centered">TO DO</h2>
-      <div class="field">
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox">
-            Change colors
-          </label>
-        </div>
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox">
-            Complete sections
-          </label>
-        </div>
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox">
-            Add icons
-          </label>
-        </div>
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox">
-            Create subpages for each section
-          </label>
-        </div>
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox">
-            Create different page layout
-          </label>
-        </div>
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox">
-            Check uskinned
-          </label>
-        </div>
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox">
-            Improve script to take all component into account (multiple modal on a single page)
-          </label>
-        </div>
-      </div>  
     </div>
   </section>
 
@@ -772,7 +722,7 @@
             <p>Modal body</p>
           </section>
           <footer class="modal-card-foot">
-            <button class="button is-success">Save changes</button>
+            <button class="button is-primary">Save changes</button>
             <button class="button modal-cancel">Cancel</button>
           </footer>
         </div>
@@ -835,10 +785,10 @@
         </div>
         <div class="field is-grouped">
           <div class="control">
-            <button class="button is-link" type="submit">Submit</button>
+            <button class="button is-primary" type="submit">Submit</button>
           </div>
           <div class="control">
-            <button class="button is-link is-light">Cancel</button>
+            <button class="button is-primary is-light">Cancel</button>
           </div>
         </div>
       </form>
@@ -1076,13 +1026,17 @@
 
   <footer class="footer">
     <div class="content has-text-centered">
-      <p>&copy; 2020 - Yamcha - Rémy Beumier</p>
+      <p>&copy; <span id="copyright-year"></span> - Yamcha - Rémy Beumier</p>
     </div>
   </footer>
 
   <script src="js/bulma-carousel.js"></script>
   <script src="js/bulma-accordion.js"></script>
   <script src="js/yamcha.js"></script>
+  <script>
+    // copyright year
+    document.querySelector('#copyright-year').innerHTML = new Date().getFullYear();
+  </script>
 </body>
   
 </html>

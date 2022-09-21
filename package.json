@@ -1,0 +1,19 @@
+{
+  "name": "yamcha",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/beumsk/yamcha.git",
+  "author": "Rémy Beumier",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "sass": "sass --no-source-map sass/mystyles.scss css/mystyles.css",
+    "sassw": "yarn sass --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.54.9",
+    "bulma": "^0.9.4"
+  },
+  "dependencies": {
+  }
+}

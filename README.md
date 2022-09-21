@@ -5,7 +5,7 @@ Page layout built using Bulma.io (https://bulma.io)
 Using Bulma extensions from: https://bulma.io/extensions/
 
 ## To Do
-- Change colors (need sass?)
+- pick my own color palette
 - Add icons
 - Create subpages for each section
 - Create different page layout

@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+// bulma variables overrides
+// reference: https://bulma.io/documentation/customize/variables/
+$primary: #60A5FA;
+
+/* ==== bulma sass files ==== */
+// you can also take only needed parts of bulma sass
+@import "../node_modules/bulma/bulma.sass";
+
+/* ==== bulma extensions sass files ==== */
+// https://bulma.io/extensions/
+@import "bulma-accordion";
+@import "bulma-carousel";
+@import "bulma-timeline";
+
+/* ==== yamcha css ==== */
+* {
+  border-radius: 0 !important;
+}
+
+img {
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.section:nth-of-type(even) {
+  background: whitesmoke;
+}
+
+/* class for background images */
+.back {
+  position: relative;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.back-sm {
+  height: 300px;
+}
+
+.back-lg {
+  height: calc(100vh - 52px);
+}
+
+.back-light::before,
+.back-lighter::before,
+.back-dark::before,
+.back-darker::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.back-light::before {
+  background-color: rgba(256,256,256,0.2);
+}
+
+.back-lighter::before {
+  background-color: rgba(256,256,256,0.4);
+}
+
+.back-dark::before {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.back-darker::before {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.has-text-contrast {
+  text-shadow: 1px 1px 5px grey, -1px -1px 5px grey;
+}
+/* class for background images */
+
+.has-children-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}

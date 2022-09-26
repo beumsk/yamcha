@@ -3,6 +3,9 @@
 // bulma variables overrides
 // reference: https://bulma.io/documentation/customize/variables/
 $primary: #60A5FA;
+$radius: 0;
+$radius-small: 0;
+$radius-large: 0;
 
 /* ==== bulma sass files ==== */
 // you can also take only needed parts of bulma sass
@@ -15,20 +18,12 @@ $primary: #60A5FA;
 @import "bulma-timeline";
 
 /* ==== yamcha css ==== */
-* {
-  border-radius: 0 !important;
-}
-
-img {
-  display: block;
-}
-
-a:hover {
-  text-decoration: underline;
+.has-text-primary svg {
+  fill: $primary;
 }
 
 .section:nth-of-type(even) {
-  background: whitesmoke;
+  background: $white-ter;
 }
 
 /* class for background images */
@@ -61,24 +56,29 @@ a:hover {
 }
 
 .back-light::before {
-  background-color: rgba(256,256,256,0.2);
+  background-color: rgba(256, 256, 256, 0.2);
 }
 
 .back-lighter::before {
-  background-color: rgba(256,256,256,0.4);
+  background-color: rgba(256, 256, 256, 0.4);
 }
 
 .back-dark::before {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .back-darker::before {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.back-duo {
+  background-image: linear-gradient(-45deg, darken($primary, 10%) 50%, $primary 50%);
 }
 
 .has-text-contrast {
-  text-shadow: 1px 1px 5px grey, -1px -1px 5px grey;
+  text-shadow: 1px 1px 5px $grey, -1px -1px 5px $grey;
 }
+
 /* class for background images */
 
 .has-children-centered {

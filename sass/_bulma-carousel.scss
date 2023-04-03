@@ -32,6 +32,8 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  // gap: 16px;
+
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -43,7 +45,10 @@
 }
 
 .slider-container .slider-item {
-  flex: none
+  flex: none;
+  // create gap between carousel items
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .slider-container .slider-item .image.is-covered img {

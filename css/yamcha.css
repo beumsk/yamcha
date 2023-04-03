@@ -3819,7 +3819,7 @@ a.tag:hover {
 
 .card {
   background-color: hsl(0deg, 0%, 100%);
-  border-radius: 0.25rem;
+  border-radius: 0;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   color: hsl(0deg, 0%, 29%);
   max-width: 100%;
@@ -3827,12 +3827,12 @@ a.tag:hover {
 }
 
 .card-footer:first-child, .card-content:first-child, .card-header:first-child {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .card-footer:last-child, .card-content:last-child, .card-header:last-child {
-  border-bottom-left-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .card-header {
@@ -3877,12 +3877,12 @@ a.tag:hover {
   position: relative;
 }
 .card-image:first-child img {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .card-image:last-child img {
-  border-bottom-left-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .card-content {
@@ -10363,6 +10363,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .slider-container .slider-item {
   flex: none;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .slider-container .slider-item .image.is-covered img {
